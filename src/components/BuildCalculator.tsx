@@ -6,19 +6,19 @@ import { useCart } from "../context/CartContext";
 
 export const BuildCalculator: React.FC = () => {
   const { addToCart } = useCart();
-  const [engine, setEngine] = useState<"B58" | "S58" | "S55">("B58");
+  const [engine, setEngine] = useState<"B58 Gen 2" | "B58 Gen 1" | "B58 Stroker">("B58 Gen 2");
   const [targetHp, setTargetHp] = useState<number>(650);
   const [addedAll, setAddedAll] = useState(false);
 
   // Engines list
   const engines = [
-    { code: "B58", name: "3.0L TwinScroll Turbo (340i, M240i, A90 Supra)", defHp: 650, ranges: [450, 750, 1000] },
-    { code: "S58", name: "3.0L TwinTurbo (G80 M3, G82 M4, G87 M2)", defHp: 800, ranges: [600, 900, 1200] },
-    { code: "S55", name: "3.0L Classic TwinTurbo (F80 M3, F82 M4, F87 M2C)", defHp: 650, ranges: [500, 750, 1000] },
+    { code: "B58 Gen 2", name: "G20 BMW 340i B58 Gen 2 (TU Platform)", defHp: 650, ranges: [450, 750, 1000] },
+    { code: "B58 Gen 1", name: "F30 BMW 340i B58 Gen 1 Platform", defHp: 600, ranges: [400, 700, 900] },
+    { code: "B58 Stroker", name: "BMW 340i B58 Custom 3.2L Stroker Spec", defHp: 900, ranges: [650, 900, 1250] },
   ] as const;
 
   // Parts list helper based on engine & horsepower range
-  const getBuildSpecs = (eng: "B58" | "S58" | "S55", hp: number) => {
+  const getBuildSpecs = (eng: "B58 Gen 2" | "B58 Gen 1" | "B58 Stroker", hp: number) => {
     let pistonType = "OgarageG Spec Forged Pistons (2618 Alloy)";
     let rodType = "CP-Carrillo H-Beam Connecting Rods";
     let studType = "ARP 2000 Head Stud Kit";
@@ -31,7 +31,7 @@ export const BuildCalculator: React.FC = () => {
     let shopLaborCost = 1900;
 
     if (hp >= 900) {
-      pistonType = "OgarageG Spec CP-Carrillo Pistons (Heavy duty racing dome)";
+      pistonType = "OgarageG Spec CP-Carrillo Pistons (Heavy duty B58 racing dome)";
       rodType = "CP-Carrillo Pro-H-Beam Rods with Custom Age 625+ Bolts";
       studType = "ARP Custom Age 625+ Head Stud Kit (280,000 psi)";
       sleeveType = "Darton MID Ductile Iron Sleeves";
@@ -68,7 +68,7 @@ export const BuildCalculator: React.FC = () => {
   const handleAddAllToCart = () => {
     // Add Pistons
     addToCart({
-      id: `${engine.toLowerCase()}-custom-builder-pistons-${targetHp}`,
+      id: `${engine.toLowerCase().replace(" ", "-")}-custom-builder-pistons-${targetHp}`,
       name: `OgarageG custom Spec ${engine} Forged Pistons (${targetHp}HP Kit)`,
       price: currentSpecs.partsCost * 0.45,
       image: "/photo/S__54026244_0.jpg",
@@ -78,7 +78,7 @@ export const BuildCalculator: React.FC = () => {
 
     // Add Rods
     addToCart({
-      id: `${engine.toLowerCase()}-custom-builder-rods-${targetHp}`,
+      id: `${engine.toLowerCase().replace(" ", "-")}-custom-builder-rods-${targetHp}`,
       name: `Carrillo Spec ${engine} H-Beam Connecting Rods (${targetHp}HP Kit)`,
       price: currentSpecs.partsCost * 0.40,
       image: "/photo/S__54026246_0.jpg",
@@ -88,7 +88,7 @@ export const BuildCalculator: React.FC = () => {
 
     // Add Studs
     addToCart({
-      id: `${engine.toLowerCase()}-custom-builder-studs-${targetHp}`,
+      id: `${engine.toLowerCase().replace(" ", "-")}-custom-builder-studs-${targetHp}`,
       name: `${engine} Upgrade Studs Kit (${targetHp}HP Spec)`,
       price: currentSpecs.partsCost * 0.15,
       image: "/photo/S__54026248_0.jpg",
@@ -112,17 +112,17 @@ export const BuildCalculator: React.FC = () => {
             Interactive Tool
           </span>
           <h3 className="text-2xl font-black text-black uppercase tracking-tight mt-2.5">
-            BMW Horsepower Build Builder
+            BMW 340i Horsepower Builder
           </h3>
           <p className="text-xs font-bold text-gray-500 mt-1">
-            Choose your engine platform, select your horsepower goals, and see your customized component recipe!
+            Choose your B58 generation, select your target horsepower goal, and see your customized build recipe!
           </p>
         </div>
 
         {/* 1. Choose Engine */}
         <div className="space-y-2">
           <label className="text-xs font-black text-black uppercase tracking-wider block">
-            1. Select Engine Code
+            1. Select 340i B58 Generation
           </label>
           <div className="grid grid-cols-3 gap-2">
             {engines.map((e) => (

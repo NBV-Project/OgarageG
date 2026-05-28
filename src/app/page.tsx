@@ -49,39 +49,39 @@ interface ChassisPlatform {
 
 const chassisPlatforms: ChassisPlatform[] = [
   {
-    code: "CIVIC EG / EK",
-    label: "Golden Era VTEC Hatchback",
-    years: "1992 - 2000",
-    engine: "B-Series VTEC / K-Swap NA",
-    hpSpec: "300 - 800+ HP",
-    link: "/shop?engine=B-Series",
-    bgImage: "/photo/672672351_26711784485105217_295210917605046360_n.jpg"
+    code: "BMW 340i G20",
+    label: "Modern B58 Gen 2 TU Platform",
+    years: "2019+",
+    engine: "B58B30O1 Single Turbo",
+    hpSpec: "500 - 1200+ HP",
+    link: "/shop?engine=B58+Gen+2",
+    bgImage: "/photo/699573108_27054805167469812_1791772490447201553_n.jpg"
   },
   {
-    code: "INTEGRA DC2 / FD2",
-    label: "High-RPM VTEC Legends",
-    years: "1996 - 2011",
-    engine: "K20A / B18C Spec R",
-    hpSpec: "240 - 600+ HP",
-    link: "/shop?engine=K-Series",
-    bgImage: "/photo/702703461_27095896783360650_8758496579318148763_n.jpg"
-  },
-  {
-    code: "CIVIC FK8 TYPE R",
-    label: "VTEC Turbo Track Weapon",
-    years: "2017 - 2021",
-    engine: "K20C1 Turbocharged",
-    hpSpec: "350 - 980+ HP",
-    link: "/shop?engine=K20C1",
+    code: "BMW 340i F30",
+    label: "Classic B58 Gen 1 Pioneer",
+    years: "2015 - 2019",
+    engine: "B58B30M0 Single Turbo",
+    hpSpec: "400 - 1000+ HP",
+    link: "/shop?engine=B58+Gen+1",
     bgImage: "/photo/653914375_26394704970146505_325215423282693049_n.jpg"
   },
   {
-    code: "CIVIC FL5 TYPE R",
-    label: "Sleek Modern Fastback",
-    years: "2022+",
-    engine: "K20C1 / L15T Turbo",
-    hpSpec: "330 - 850+ HP",
-    link: "/shop?engine=L15B",
+    code: "BMW 340i xDrive",
+    label: "AWD Drag Racing Weapon",
+    years: "2016+",
+    engine: "B58 Stroker / Big Turbo",
+    hpSpec: "800 - 1300+ HP",
+    link: "/shop?engine=B58+Stroker",
+    bgImage: "/photo/702703461_27095896783360650_8758496579318148763_n.jpg"
+  },
+  {
+    code: "BMW 340i Touring G21",
+    label: "Premium Sleeper Wagon",
+    years: "2020+",
+    engine: "B58 Gen 2 / Bolt-on Spec",
+    hpSpec: "500 - 950+ HP",
+    link: "/shop?engine=B58+Gen+2",
     bgImage: "/photo/657417279_26465819353035066_3210606262633383033_n.jpg"
   }
 ];

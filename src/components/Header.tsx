@@ -229,8 +229,8 @@ export const Header: React.FC = () => {
               })}
             </div>
 
-            <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs font-bold text-gray-500">
-              <p className="text-center">🔥 Premium BMW Performance Specialist</p>
+            <div className="p-4 border-t border-gray-150 bg-gray-50 text-xs font-bold text-gray-500">
+              <p className="text-center">🔥 Premium BMW 340i B58 Specialist</p>
               <p className="text-center mt-1">© 2026 OgarageG Co., Ltd.</p>
             </div>
           </div>
@@ -278,7 +278,7 @@ export const Header: React.FC = () => {
                     onClick={() => setIsCartOpen(false)}
                     className="bg-[#9e0005] text-white hover:bg-black font-extrabold text-sm uppercase tracking-wider px-6 py-3 rounded-full transition-all shadow-md inline-block"
                   >
-                    Browse BMW Parts
+                    Browse 340i Parts
                   </Link>
                 </div>
               ) : (

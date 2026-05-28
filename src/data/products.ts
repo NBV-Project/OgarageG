@@ -2,7 +2,7 @@ export interface Product {
   id: string;
   name: string;
   price: number;
-  engine: "B58" | "S58" | "S55" | "N54" | "All BMW" | string;
+  engine: "B58 Gen 1" | "B58 Gen 2" | "B58 Stroker" | "All B58" | string;
   category: "pistons" | "rods" | "hardware" | "kits" | "sleeves" | "crankshafts" | string;
   image: string;
   description: string;
@@ -12,81 +12,81 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "b58-pro-xtreme-pistons",
-    name: "OgarageG Spec Forged Piston Set (BMW B58 3.0L Turbo)",
+    id: "b58-gen2-pro-xtreme-pistons",
+    name: "OgarageG Spec CP-Carrillo Forged Pistons (BMW 340i G20 B58 Gen 2)",
     price: 1199,
-    engine: "B58",
+    engine: "B58 Gen 2",
     category: "pistons",
     image: "/photo/S__54026244_0.jpg",
-    description: "Designed by OgarageG in collaboration with CP-Carrillo, these 2618 forged pistons are the ultimate upgrade for the legendary BMW B58 engine (found in BMW 340i, M240i, 440i, and Supra A90). Featuring a reinforced dome, upgraded tool steel pins, and advanced anti-friction skirt coatings to handle up to 35+ psi of boost.",
+    description: "Designed specifically for the Gen 2 B58 engine found in the BMW 340i G20. These 2618 forged pistons feature proprietary crown channels to optimize direct injection spray patterns and reinforced ring lands to handle up to 38+ psi of boost.",
     specs: {
       Material: "2618 High-Tensile Forged Aluminum",
       "Bore Size": "82.00mm (Standard) or 82.50mm (+0.50mm)",
       "Compression Ratio": "10.5:1 (Perfect for high boost E85 builds)",
       "Wrist Pin": "Upgraded Tool Steel Pin (0.225\" Wall)",
-      Coating: "Tuffskirt Anti-Friction Skirt Coating"
+      Application: "BMW G20 340i B58 Gen 2 / TU"
     },
     isFeatured: true
   },
   {
-    id: "s58-pro-xtreme-pistons",
-    name: "OgarageG Spec CP-Carrillo Forged Pistons (BMW S58 Twin-Turbo)",
-    price: 1299,
-    engine: "S58",
+    id: "b58-gen1-pro-xtreme-pistons",
+    name: "OgarageG Spec Forged Pistons (BMW 340i F30 B58 Gen 1)",
+    price: 1150,
+    engine: "B58 Gen 1",
     category: "pistons",
     image: "/photo/S__54026245_0.jpg",
-    description: "The gold standard for BMW S58 engine builds (G80 M3, G82 M4, X3M). Tailored for extreme thermal resistance in high-RPM time attack racing. Features proprietary crown channels to optimize combustion efficiency under heavy twin-turbo pressures.",
+    description: "The ultimate forged pistons for the Gen 1 B58 engine (BMW 340i F30). Tailored for extreme thermal resistance in high-RPM street and drag racing. Engineered to minimize cylinder wall wear under heavy boost loads.",
     specs: {
       Material: "2618 Forged Alloy",
-      "Bore Size": "84.00mm (Standard)",
-      "Compression Ratio": "9.3:1 (Safe for 1,200+ HP applications)",
+      "Bore Size": "82.00mm (Standard)",
+      "Compression Ratio": "10.0:1 (Safe for 900+ HP applications)",
       "Wrist Pin": "Upgraded heavy wall tool steel pin",
-      Application: "BMW M3 G80 / M4 G82 / G87 M2"
+      Application: "BMW F30 340i B58 Gen 1"
     },
     isFeatured: true
   },
   {
-    id: "b58-carrillo-rods",
-    name: "CP-Carrillo Pro-H-Beam Connecting Rod Set (BMW B58)",
+    id: "b58-carrillo-rods-h",
+    name: "CP-Carrillo Pro-H-Beam Connecting Rod Set (BMW 340i B58)",
     price: 1549,
-    engine: "B58",
+    engine: "All B58",
     category: "rods",
     image: "/photo/S__54026246_0.jpg",
-    description: "Manufactured from Carrilloy steel, these connecting rods are designed specifically for BMW B58 inline-6 turbo engines pushed to their absolute limits. Fitted with ultra-high strength ARP Custom Age 625+ bolts to prevent rod stretch.",
+    description: "Manufactured from Carrilloy steel, these connecting rods are designed specifically for all BMW 340i B58 inline-6 turbo engines pushed to their absolute limits. Fitted with ultra-high strength ARP Custom Age 625+ bolts to prevent rod stretch.",
     specs: {
       Material: "Carrilloy Proprietary Steel",
       Style: "Heavy-Duty H-Beam",
       Bolts: "ARP Custom Age 625+ (280,000 psi tensile strength)",
       Weight: "Balanced to +/- 1 gram",
-      "HP Rating": "1,000+ HP Certified"
+      "HP Rating": "1,200+ HP Certified"
     },
     isFeatured: true
   },
   {
-    id: "s55-carrillo-rods",
-    name: "CP-Carrillo H-Beam Connecting Rod Set (BMW S55 / N55)",
-    price: 1649,
-    engine: "S55",
+    id: "b58-carrillo-rods-a",
+    name: "CP-Carrillo A-Beam Lightweight Connecting Rod Set (BMW 340i B58)",
+    price: 1399,
+    engine: "All B58",
     category: "rods",
     image: "/photo/S__54026246_0.jpg",
-    description: "Increase S55 and N55 engine strength and reliability with the absolute best connecting rods money can buy. Spec'd for high-boost turbo or ultra high-RPM circuit racing F80 M3 / F82 M4 applications.",
+    description: "Lightweight A-beam connecting rods spec'd for high-response street and circuit racing BMW 340i builds. Reduces rotating mass for faster rev response while maintaining up to 800 HP capacity.",
     specs: {
       Material: "Carrilloy Steel Alloy",
-      Style: "H-Beam with Tapered Small End",
-      Bolts: "ARP2000 or Upgrade to Custom Age 625+",
+      Style: "Lightweight A-Beam",
+      Bolts: "ARP2000 Bolts standard",
       "Pin Diameter": "22mm",
-      "HP Rating": "1,200+ HP Certified"
+      "HP Rating": "800 HP Certified"
     },
     isFeatured: false
   },
   {
-    id: "b58-arp-head-studs",
-    name: "ARP Custom Age 625+ Head Stud Kit (BMW B58 3.0L Turbo)",
+    id: "b58-arp-head-studs-ca",
+    name: "ARP Custom Age 625+ Head Stud Kit (BMW 340i B58)",
     price: 599,
-    engine: "B58",
+    engine: "All B58",
     category: "hardware",
     image: "/photo/S__54026248_0.jpg",
-    description: "Prevent cylinder head lifting and head gasket blowout under extreme boost on your B58. Custom Age 625+ head studs have a tensile strength of 260,000–280,000 psi, outperforming standard ARP2000 studs by over 20%.",
+    description: "Prevent cylinder head lifting and head gasket blowout under extreme boost on your B58 block. Custom Age 625+ head studs have a tensile strength of 260,000–280,000 psi, outperforming standard ARP2000 studs by over 20%.",
     specs: {
       Material: "Custom Age 625+ Super-Alloy",
       Strength: "270,000 psi tensile strength",
@@ -97,13 +97,13 @@ export const products: Product[] = [
     isFeatured: true
   },
   {
-    id: "bmw-arp2000-main-studs",
-    name: "ARP 2000 Main Stud Kit (BMW B58 / S58 / S55 / N54)",
+    id: "b58-arp2000-main-studs",
+    name: "ARP 2000 Main Stud Kit (BMW 340i B58)",
     price: 249,
-    engine: "All BMW",
+    engine: "All B58",
     category: "hardware",
     image: "/photo/S__54026248_0.jpg",
-    description: "Provide maximum block rigidity and eliminate main cap walk under heavy load. Essential upgrade for any high-horsepower BMW inline-6 engine building project.",
+    description: "Provide maximum block rigidity and eliminate main cap walk under heavy load. Essential upgrade for any high-horsepower BMW 340i B58 inline-6 engine building project.",
     specs: {
       Material: "ARP2000 Chrome-Moly Alloy",
       Strength: "220,000 psi tensile strength",
@@ -113,13 +113,13 @@ export const products: Product[] = [
     isFeatured: false
   },
   {
-    id: "b58-darton-sleeves",
-    name: "Darton Mid-Sleeve Kit (BMW B58 3.0L Turbo)",
+    id: "b58-darton-sleeves-block",
+    name: "Darton Mid-Sleeve Kit (BMW 340i B58 block)",
     price: 899,
-    engine: "B58",
+    engine: "All B58",
     category: "sleeves",
     image: "/photo/S__54026247_0.jpg",
-    description: "Engineered for high boost! Replaces the factory aluminum closed-deck block sleeves with heavy-duty Darton ductile iron sleeves. Absolutely necessary for builds shooting for 1,000+ wheel horsepower.",
+    description: "Engineered for high boost! Replaces the factory aluminum closed-deck block sleeves with heavy-duty Darton ductile iron sleeves. Absolutely necessary for BMW 340i builds shooting for 1,000+ wheel horsepower.",
     specs: {
       Material: "Darton Ductile Iron",
       "Bore Range": "82.00mm to 83.50mm",
@@ -129,29 +129,13 @@ export const products: Product[] = [
     isFeatured: false
   },
   {
-    id: "s58-darton-sleeves",
-    name: "Darton Mid-Sleeve Kit (BMW S58 block)",
-    price: 949,
-    engine: "S58",
-    category: "sleeves",
-    image: "/photo/S__54026247_0.jpg",
-    description: "Darton modular integrated cylinder sleeve kit for extreme high-boost S58 twin-turbo applications. Bulletproofs the block for up to 1,500+ HP.",
-    specs: {
-      Material: "Darton Ductile Iron",
-      "Bore Range": "84.00mm to 86.00mm",
-      "Wall Thickness": "Darton signature dry sleeve system",
-      Benefit: "Prevents sleeve sinking and splitting under pressure"
-    },
-    isFeatured: false
-  },
-  {
-    id: "b58-pro-turbo-kit",
-    name: "OgarageG Pro-Series Stage 2 Build Kit (BMW B58 3.0L)",
+    id: "b58-pro-turbo-kit-gen2",
+    name: "OgarageG Pro-Series Stage 2 Build Kit (BMW 340i G20 B58 Gen 2)",
     price: 2199,
-    engine: "B58",
+    engine: "B58 Gen 2",
     category: "kits",
     image: "/photo/S__54026249.jpg",
-    description: "An all-in-one arsenal of engine internals to bulletproof your BMW B58 engine for up to 900 HP. Includes forged pistons, Carrillo steel rods, rod bearings, main bearings, and heavy-duty ARP hardware.",
+    description: "An all-in-one arsenal of engine internals to bulletproof your BMW 340i G20 B58 Gen 2 engine for up to 900 HP. Includes forged pistons, Carrillo steel rods, rod bearings, main bearings, and heavy-duty ARP hardware.",
     specs: {
       "Pistons Included": "OgarageG Spec Forged 2618 (82.00mm, 10.5:1 CR)",
       "Rods Included": "CP-Carrillo H-Beam with CA625+ bolts",
@@ -162,13 +146,13 @@ export const products: Product[] = [
     isFeatured: true
   },
   {
-    id: "s58-pro-turbo-kit-1200",
-    name: "OgarageG Stage 3 1,200+ HP Engine Build Kit (BMW S58)",
+    id: "b58-pro-turbo-kit-1200",
+    name: "OgarageG Stage 3 1,200+ HP Engine Build Kit (BMW 340i B58)",
     price: 4499,
-    engine: "S58",
+    engine: "All B58",
     category: "kits",
     image: "/photo/S__54026249.jpg",
-    description: "The absolute ultimate package for building a world-record BMW M3/M4 drag or time attack car. We put everything we use in our shop 1,200HP builds into this kit. Complete forged internal, hardware, gasket, and sleeving package.",
+    description: "The absolute ultimate package for building a world-record BMW 340i drag or track car. We put everything we use in our shop 1,200HP builds into this kit. Complete forged internal, hardware, gasket, and sleeving package.",
     specs: {
       Pistons: "OgarageG Spec CP-Carrillo Pistons (Tool steel pins)",
       Rods: "CP-Carrillo Pro-H-Beam with Custom Age 625+ bolts",
@@ -180,16 +164,16 @@ export const products: Product[] = [
     isFeatured: true
   },
   {
-    id: "s58-billet-crank",
-    name: "OgarageG 4340 Billet Steel Lightweight Crankshaft (BMW S58)",
+    id: "b58-billet-crank-stroker",
+    name: "OgarageG 4340 Billet Steel Stroker Crankshaft (BMW B58 3.2L)",
     price: 2999,
-    engine: "S58",
+    engine: "B58 Stroker",
     category: "crankshafts",
     image: "/photo/S__54026249.jpg",
-    description: "Bespoke engineered for high RPM and high horsepower applications. Machined from a single block of aerospace-grade 4340 billet steel, featuring knife-edged counterweights and custom oiling channels.",
+    description: "Bespoke engineered 3.2L stroker crankshaft for absolute high-boost applications. Machined from a single block of aerospace-grade 4340 billet steel, featuring knife-edged counterweights and custom oiling channels.",
     specs: {
       Material: "4340 Billet Steel",
-      Stroke: "90.0mm (Standard) or 93.0mm (Stroker)",
+      Stroke: "94.6mm (Standard) or 97.0mm (Stroker for 3.2L)",
       Weight: "15% lighter than OEM crankshaft",
       RevLimit: "Safe for up to 9,500 RPM",
       Balancing: "Fully balanced to racing specifications"
@@ -205,5 +189,5 @@ export const getProductsByCategory = (cat: string) => {
 
 export const getProductsByEngine = (eng: string) => {
   if (!eng || eng === "all") return products;
-  return products.filter((p) => p.engine.toLowerCase() === eng.toLowerCase() || p.engine === "All BMW");
+  return products.filter((p) => p.engine.toLowerCase() === eng.toLowerCase() || p.engine === "All B58");
 };
