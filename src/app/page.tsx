@@ -12,24 +12,24 @@ import { galleryItems } from "../data/gallery";
 
 const heroSlides = [
   {
-    title: "THE HONDA CIVIC SPECIALISTS",
-    subtitle: "Billet internals & components designed to handle 800+ HP on Civic FC / FK platforms.",
-    cta: "Shop L15B Parts",
-    link: "/shop?engine=L15B",
+    title: "THE BMW PERFORMANCE SPECIALISTS",
+    subtitle: "Billet internals & components designed to handle 1000+ HP on B58 / S58 platforms (BMW 340i, M3, M4).",
+    cta: "Shop B58 Parts",
+    link: "/shop?engine=B58",
     bgImage: "/photo/584772139_25313103488306664_7245076373796934313_n.jpg",
-    tagline: "🔥 WORLD-RECORD HONDA PERFORMANCE"
+    tagline: "🔥 WORLD-RECORD BMW PERFORMANCE"
   },
   {
     title: "CNC MACHINING & ENGINE ASSEMBLY",
-    subtitle: "From Darton block sleeving to full blueprinted engine assembly, all done in-house.",
+    subtitle: "From Darton block sleeving to full blueprinted engine assembly for BMW inline-6, all done in-house.",
     cta: "Explore Tuning Services",
     link: "/services",
     bgImage: "/photo/648178666_26251178824499121_2090250045273905207_n.jpg",
     tagline: "🛠️ AEROSPACE ACCURACY & blueprinted"
   },
   {
-    title: "STAGE 3 PRO-SERIES HONDA KITS",
-    subtitle: "All-in-one comprehensive engine internals packages for street & circuit racing.",
+    title: "STAGE 3 PRO-SERIES BMW KITS",
+    subtitle: "All-in-one comprehensive engine internals packages for street & drag racing.",
     cta: "Custom Piston Builder",
     link: "/custom-pistons",
     bgImage: "/photo/S__54026249.jpg",
@@ -116,10 +116,10 @@ export default function Home() {
     },
     {
       id: "cnc-head",
-      name: "CNC VTEC Cylinder Head Work",
+      name: "CNC Cylinder Head Work",
       price: "Starts at $1,299",
       image: "/photo/700285747_27054805450803117_158015724386763124_n.jpg",
-      description: "Optimize airflow dynamics and compression. Features oversized race valve configurations, manganese-bronze valve guides, and proprietary VTEC port specs.",
+      description: "Optimize airflow dynamics and compression. Features oversized race valve configurations, manganese-bronze valve guides, and proprietary motorsport port specs.",
       highlights: ["Up to +20% intake port volume", "Multi-angle race valve jobs", "Combustion chamber volume matching"]
     },
     {
@@ -127,7 +127,7 @@ export default function Home() {
       name: "Short / Long Block Blueprinting",
       price: "Starts at $1,999",
       image: "/photo/700306268_27054805110803151_6200875956161866076_n.jpg",
-      description: "Let our professional race builders assemble your dream Honda engine. Every engine is blueprinted, balanced to +/- 0.5 grams, and fully leak tested.",
+      description: "Let our professional race builders assemble your dream BMW engine. Every engine is blueprinted, balanced to +/- 0.5 grams, and fully leak tested.",
       highlights: ["Blueprinted assemblyspec logs", "Custom piston ring gapping for E85", "Pressurized priming checking"]
     }
   ];
@@ -172,7 +172,7 @@ export default function Home() {
                 </span>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-none text-white drop-shadow-lg">
                   {slide.title.split(" ").map((w, i) => (
-                    <span key={i} className={w === "L15B" || w === "HONDA" || w === "MACHINING" || w === "TURBO" || w === "CIVIC" ? "text-[#9e0005]" : ""}>
+                    <span key={i} className={w === "B58" || w === "BMW" || w === "MACHINING" || w === "TURBO" || w === "340i" || w === "M3" || w === "M4" ? "text-[#9e0005]" : ""}>
                       {w}{" "}
                     </span>
                   ))}
@@ -215,15 +215,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. SHOP BY HONDA CHASSIS PLATFORM */}
+      {/* 2. SHOP BY BMW CHASSIS PLATFORM */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2">
           <span className="text-xs font-black text-[#9e0005] uppercase tracking-widest">Shop By Platform</span>
           <h2 className="text-3xl font-black text-black uppercase tracking-tight">
-            SHOP BY HONDA CHASSIS
+            SHOP BY BMW CHASSIS
           </h2>
           <p className="text-xs font-bold text-gray-500 max-w-lg mx-auto leading-relaxed">
-            Select your high-performance Honda platform below to filter our engineering catalog for precise component blueprints.
+            Select your high-performance BMW platform below to filter our engineering catalog for precise component blueprints.
           </p>
         </div>
 
@@ -350,7 +350,7 @@ export default function Home() {
               <span>Interactive Engine Builder</span>
             </span>
             <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white leading-none">
-              Blueprint Your Ultimate Honda Engine
+              Blueprint Your Ultimate BMW Engine
             </h2>
             <p className="text-xs font-bold text-gray-400 max-w-md mx-auto leading-normal">
               Select your engine platform, choose your performance limits, and let our blueprinter calculate the optimal component recipe.
@@ -570,32 +570,32 @@ export default function Home() {
             <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative select-none">
               <img
                 src="/photo/699573108_27054805167469812_1791772490447201553_n.jpg"
-                alt="Civic FK8 Type R"
+                alt="BMW M3 G80 S58"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex flex-col justify-between p-6 md:hidden">
                 <span className="bg-[#9e0005] text-white text-[10px] font-black px-2 py-0.5 rounded-full w-max uppercase">
-                  980 WHEEL HP
+                  1200 WHEEL HP
                 </span>
               </div>
             </div>
             <div className="p-6 md:w-1/2 flex flex-col justify-between space-y-4">
               <div className="space-y-2">
                 <span className="hidden md:inline-block bg-[#9e0005] text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-sm tracking-wider w-max select-none">
-                  980 WHEEL HP
+                  1200 WHEEL HP
                 </span>
                 <h3 className="font-extrabold text-lg text-black uppercase tracking-tight">
-                  THE CIVIC FK8 TYPE R &quot;MONSTER&quot;
+                  THE BMW M3 G80 S58 &quot;MONSTER&quot;
                 </h3>
                 <p className="text-xs font-bold text-gray-500 leading-relaxed">
-                  Engineered in our workshop to test K20C1 block limits. Features custom CP-Carrillo pistons, Custom Age 625+ studs, Darton sleeves, and our proprietary cylinder fire-ringing.
+                  Engineered in our workshop to test S58 block limits. Features custom CP-Carrillo pistons, Custom Age 625+ studs, Darton sleeves, and our proprietary cylinder fire-ringing.
                 </p>
               </div>
               <Link
-                href="/shop?engine=K20C1"
+                href="/shop?engine=S58"
                 className="text-xs font-extrabold text-[#9e0005] hover:text-black uppercase tracking-wider flex items-center gap-1.5"
               >
-                <span>Get K20C1 Build Recipe</span>
+                <span>Get S58 Build Recipe</span>
                 <ChevronRight size={14} />
               </Link>
             </div>
@@ -606,32 +606,32 @@ export default function Home() {
             <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative select-none">
               <img
                 src="/photo/672677300_26711785435105122_3285091312195490304_n.jpg"
-                alt="Civic FC L15B"
+                alt="BMW 340i G20 B58"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex flex-col justify-between p-6 md:hidden">
                 <span className="bg-black text-white text-[10px] font-black px-2 py-0.5 rounded-full w-max uppercase">
-                  650 HP STREET+
+                  850 HP STREET+
                 </span>
               </div>
             </div>
             <div className="p-6 md:w-1/2 flex flex-col justify-between space-y-4">
               <div className="space-y-2">
                 <span className="hidden md:inline-block bg-black text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-sm tracking-wider w-max select-none">
-                  650 HP STREET+
+                  850 HP STREET+
                 </span>
                 <h3 className="font-extrabold text-lg text-black uppercase tracking-tight">
-                  THE L15B CIVIC FC STREET KILLER
+                  THE BMW 340i G20 B58 STREET OUTLAW
                 </h3>
                 <p className="text-xs font-bold text-gray-500 leading-relaxed">
                   A daily drivable street weapon utilizing our custom Darton sleeve block kit. Balanced and blueprint assembled to generate maximum torque under heavy turbo boost.
                 </p>
               </div>
               <Link
-                href="/shop?engine=L15B"
+                href="/shop?engine=B58"
                 className="text-xs font-extrabold text-[#9e0005] hover:text-black uppercase tracking-wider flex items-center gap-1.5"
               >
-                <span>Get L15B Build Recipe</span>
+                <span>Get B58 Build Recipe</span>
                 <ChevronRight size={14} />
               </Link>
             </div>

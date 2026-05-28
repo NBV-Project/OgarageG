@@ -16,12 +16,12 @@ export default function Services() {
         "Darton Ductile Iron (120,000 psi tensile strength)",
         "Precision in-house CNC boring & fitment",
         "Perfect cylinder concentricity guaranteed",
-        "Essential for Civic L15B/K20C1 builds shooting for 500+ HP"
+        "Essential for BMW B58/S58 builds shooting for 800+ HP"
       ]
     },
     {
       id: "cnc-head",
-      name: "CNC VTEC Cylinder Head Machining & Porting",
+      name: "CNC Cylinder Head Machining & Porting",
       price: "Starts at $1,299",
       image: "/photo/700285747_27054805450803117_158015724386763124_n.jpg",
       description: "Optimize flow dynamics and combustion geometry. Features oversized race valve options, manganese-bronze valve guides, and proprietary CNC porting specifications.",
@@ -42,7 +42,7 @@ export default function Services() {
         "Stainless steel compression ring inserts",
         "Eliminates head gasket blowouts up to 45+ psi",
         "Proprietary groove depth specifications",
-        "Specifically recommended for Civic FC/FK race builds"
+        "Specifically recommended for BMW F30/G20/G80 race builds"
       ]
     },
     {
@@ -81,7 +81,7 @@ export default function Services() {
         "Dynamic balancing at up to 9,000 RPM simulation",
         "Micro-polished rod and main journals",
         "Improves main bearing lifespan by up to 150%",
-        "Crucial for high-revving Honda VTEC engines"
+        "Crucial for high-revving BMW inline-6 engines"
       ]
     }
   ];
@@ -102,7 +102,7 @@ export default function Services() {
             In-House Tuning & Machining Services
           </h1>
           <p className="text-xs font-bold text-gray-400 leading-normal">
-            Take your Honda engine build to the next level. Our in-house machine shop is staffed by master builders to deliver race-ready, blueprinted perfection.
+            Take your BMW engine build to the next level. Our in-house machine shop is staffed by master builders to deliver race-ready, blueprinted perfection.
           </p>
         </div>
       </div>

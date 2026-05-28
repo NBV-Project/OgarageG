@@ -11,18 +11,18 @@ export const galleryItems: GalleryItem[] = [
     src: "/photo/648448042_26251179264499077_3309831350860693678_n.jpg",
     category: "engines",
     title: "Darton Cylinder Sleeving",
-    description: "In-house CNC block machining and press-fitting premium Darton iron sleeves for Civic L15B."
+    description: "In-house CNC block machining and press-fitting premium Darton iron sleeves for BMW B58."
   },
   {
     src: "/photo/700285747_27054805450803117_158015724386763124_n.jpg",
     category: "engines",
     title: "CNC Cylinder Head Porting",
-    description: "Maximizing intake/exhaust port flow velocity for Honda K20C1 Type R cylinder head."
+    description: "Maximizing intake/exhaust port flow velocity for BMW S58 Twin-Turbo cylinder head."
   },
   {
     src: "/photo/700306268_27054805110803151_6200875956161866076_n.jpg",
     category: "engines",
-    title: "VTEC Short Block Assembly",
+    title: "Inline-6 Short Block Assembly",
     description: "Fully blueprinted short block featuring balanced rotating assembly and high boost ring gapping."
   },
   {
@@ -76,20 +76,20 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/S__54026249.jpg",
     category: "engines",
-    title: "K24 Turbo Internal Upgrade",
-    description: "OgarageG Spec K-series heavy duty pistons and custom H-beam connecting rods package."
+    title: "B58 Turbo Internal Upgrade",
+    description: "OgarageG Spec B58 heavy duty pistons and custom H-beam connecting rods package."
   },
   {
     src: "/photo/557575918_24909908745292809_8767376085136376854_n.jpg",
     category: "engines",
     title: "Race Valve Springs Upgrade",
-    description: "Installing dual-coil high RPM valve springs to prevent valve float at 9,500+ RPM."
+    description: "Installing dual-coil high RPM valve springs to prevent valve float at 8,500+ RPM."
   },
   {
     src: "/photo/565655737_24987463157537367_4691886276897795684_n.jpg",
     category: "engines",
     title: "Titanium Retainer Assembly",
-    description: "Ultra lightweight titanium retainers and high flow valves prepped for K20C1 racing head."
+    description: "Ultra lightweight titanium retainers and high flow valves prepped for S58 racing head."
   },
   {
     src: "/photo/603848546_25635507029399640_1341411430193938757_n.jpg",
@@ -102,14 +102,14 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/648178666_26251178824499121_2090250045273905207_n.jpg",
     category: "tuning",
-    title: "Civic FL 1.5T Dyno Calibration",
-    description: "Fine-tuning the VTEC Turbo L15B engine map using Hondata FlashPro on our rolling road."
+    title: "BMW 340i B58 Dyno Calibration",
+    description: "Fine-tuning the B58 engine map using Bootmod3 / MHD custom tuning on our rolling road."
   },
   {
     src: "/photo/648223733_26251178761165794_6778124099033751589_n.jpg",
     category: "tuning",
     title: "Big Turbo Dyno Power Run",
-    description: "Validating boost response and exhaust backpressure at 2.5 bar boost pressure."
+    description: "Validating boost response and exhaust backpressure at 2.5 bar boost pressure on a B58."
   },
   {
     src: "/photo/700800334_27099658192984509_6668226825757960123_n.jpg",
@@ -158,13 +158,13 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/584772139_25313103488306664_7245076373796934313_n.jpg",
     category: "cars",
-    title: "Civic FC Red Street Outlaw",
-    description: "A fully built L15B block package combined with custom aero wheels. Racetrack ready."
+    title: "BMW M240i Red Street Outlaw",
+    description: "A fully built B58 block package combined with custom dynamic wheels. Racetrack ready."
   },
   {
     src: "/photo/653914375_26394704970146505_325215423282693049_n.jpg",
     category: "cars",
-    title: "Civic Type R FK8 Scaling",
+    title: "BMW G80 M3 Corner Weighting",
     description: "Conducting corner weight balancing and motorsport suspension alignment check."
   },
   {
@@ -176,8 +176,8 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/657417279_26465819353035066_3210606262633383033_n.jpg",
     category: "cars",
-    title: "Civic FL5 Type R Racetrack Prepped",
-    description: "Pre-race checks on the track-prepped Type R prior to shakedown runs at Chang Circuit."
+    title: "BMW M4 G82 Racetrack Prepped",
+    description: "Pre-race checks on the track-prepped M4 prior to shakedown runs at Chang Circuit."
   },
   {
     src: "/photo/660453113_26574651502151850_3390599513455226332_n.jpg",
@@ -188,14 +188,14 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/672672351_26711784485105217_295210917605046360_n.jpg",
     category: "cars",
-    title: "Classic VTEC EG Swap",
-    description: "Classic Honda Civic hatchback fitted with a built high RPM naturally aspirated VTEC block."
+    title: "Classic BMW E30 B58 Swap",
+    description: "Classic BMW E30 chassis fitted with a built high-horsepower B58 inline-6 turbo engine."
   },
   {
     src: "/photo/699573108_27054805167469812_1791772490447201553_n.jpg",
     category: "cars",
-    title: "Civic FK7 VTEC Turbo Street Tune",
-    description: "500 HP package tuned on E85, maintaining street air-conditioning and full comfort."
+    title: "BMW 340i B58 Turbo Street Tune",
+    description: "800 HP package tuned on E85, maintaining street air-conditioning and full comfort."
   },
   {
     src: "/photo/701889442_27099657942984534_6808805249474279218_n.jpg",
@@ -206,20 +206,20 @@ export const galleryItems: GalleryItem[] = [
   {
     src: "/photo/702703461_27095896783360650_8758496579318148763_n.jpg",
     category: "cars",
-    title: "Integra Type R DC2 Restoration",
-    description: "Complete powertrain build and historic restoration of a legendary classic Type R."
+    title: "BMW E46 M3 Classic Restoration",
+    description: "Complete powertrain build and historic restoration of a legendary classic inline-6 M3."
   },
   {
     src: "/photo/704147957_27126379846979010_4792559278647530933_n.jpg",
     category: "cars",
     title: "Full Carbon Track Weapon",
-    description: "Honda Civic drag-spec beast featuring lightweight body panels and custom race wheels."
+    description: "BMW G82 drag-spec beast featuring lightweight carbon body panels and custom race wheels."
   },
   {
     src: "/photo/704667893_27099658219651173_2729554671504691973_n.jpg",
     category: "cars",
-    title: "Accord VTEC Turbo Dyno Finish",
-    description: "Custom turbocharged sleeper Accord packing high-horsepower street build."
+    title: "BMW 335i N54 Dyno Finish",
+    description: "Custom twin-turbocharged sleeper 335i packing high-horsepower street build."
   },
   {
     src: "/photo/708450915_27172140132402981_8754958205581360612_n.jpg",

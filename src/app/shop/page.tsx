@@ -33,7 +33,7 @@ function ShopContent() {
     if (selectedEngine !== "all") {
       const match =
         p.engine.toLowerCase() === selectedEngine.toLowerCase() ||
-        p.engine === "All Honda";
+        p.engine === "All BMW";
       if (!match) return false;
     }
 
@@ -55,7 +55,7 @@ function ShopContent() {
 
   const getEngineCount = (eng: string) => {
     if (eng === "all") return products.length;
-    return products.filter((p) => p.engine.toLowerCase() === eng.toLowerCase() || p.engine === "All Honda").length;
+    return products.filter((p) => p.engine.toLowerCase() === eng.toLowerCase() || p.engine === "All BMW").length;
   };
 
   const categories = [
@@ -70,10 +70,10 @@ function ShopContent() {
 
   const engines = [
     { code: "all", label: "All Engines", count: getEngineCount("all") },
-    { code: "L15B", label: "Honda L15B", count: getEngineCount("L15B") },
-    { code: "K20C1", label: "Honda K20C1", count: getEngineCount("K20C1") },
-    { code: "K-Series", label: "Honda K20/K24", count: getEngineCount("K-Series") },
-    { code: "B-Series", label: "Honda B-Series", count: getEngineCount("B-Series") },
+    { code: "B58", label: "BMW B58", count: getEngineCount("B58") },
+    { code: "S58", label: "BMW S58", count: getEngineCount("S58") },
+    { code: "S55", label: "BMW S55", count: getEngineCount("S55") },
+    { code: "N54", label: "BMW N54/N55", count: getEngineCount("N54") },
   ];
 
   return (
@@ -89,10 +89,10 @@ function ShopContent() {
             OgarageG Catalog
           </span>
           <h1 className="text-3xl font-black uppercase tracking-tight text-white leading-none">
-            Honda Performance Shop
+            BMW Performance Shop
           </h1>
           <p className="text-xs font-bold text-gray-400 leading-normal">
-            Browse our meticulously designed racing parts catalog. Filter by your specific Honda engine platform or required internal components.
+            Browse our meticulously designed racing parts catalog. Filter by your specific BMW engine platform or required internal components.
           </p>
         </div>
       </div>

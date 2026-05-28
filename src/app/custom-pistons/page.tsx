@@ -11,17 +11,17 @@ export default function CustomPistons() {
     lastName: "",
     email: "",
     phone: "",
-    engine: "L15B",
-    cylinderHead: "OEM L15B1 DOHC Head",
+    engine: "B58",
+    cylinderHead: "OEM B58 DOHC Cylinder Head",
     headVolume: "OEM Specs",
     camshaft: "Standard Lift",
     valveSizeIntake: "Standard",
     valveSizeExhaust: "Standard",
-    boreSize: "73.00mm (Standard)",
-    compressionRatio: "10.3:1 (Recommended for High Boost)",
-    rodLength: "139.6mm",
-    crankStroke: "89.5mm",
-    targetHp: "450 HP",
+    boreSize: "82.00mm (Standard)",
+    compressionRatio: "10.5:1 (Recommended for Flex Fuel Boost)",
+    rodLength: "148.0mm",
+    crankStroke: "94.6mm",
+    targetHp: "800 HP",
     fuelType: "E85 / Flex Fuel",
     induction: "Turbocharged",
     nitrous: "No",
@@ -183,11 +183,11 @@ export default function CustomPistons() {
                         value={formData.engine}
                         onChange={(e) => setFormData({ ...formData, engine: e.target.value })}
                       >
-                        <option value="L15B">Honda L15B (1.5L Civic Turbo)</option>
-                        <option value="K20C1">Honda K20C1 (2.0L Civic Type R Turbo)</option>
-                        <option value="K-Series">Honda K20 / K24 (Accord / Custom Swap)</option>
-                        <option value="B-Series">Honda B16 / B18 (Classic VTEC)</option>
-                        <option value="Other">Other custom Honda platform</option>
+                        <option value="B58">BMW B58 (3.0L Single Turbo Inline-6)</option>
+                        <option value="S58">BMW S58 (3.0L Twin Turbo Inline-6)</option>
+                        <option value="S55">BMW S55 (3.0L Classic Twin Turbo)</option>
+                        <option value="N54">BMW N54 / N55 (3.0L Classic Turbo)</option>
+                        <option value="Other">Other custom BMW inline-6 platform</option>
                       </select>
                     </div>
                     <div className="space-y-1.5">
@@ -197,9 +197,9 @@ export default function CustomPistons() {
                         value={formData.boreSize}
                         onChange={(e) => setFormData({ ...formData, boreSize: e.target.value })}
                       >
-                        <option value="73.00mm (Standard)">73.00mm (L15B Standard OEM)</option>
-                        <option value="73.50mm (+0.50mm Overbore)">73.50mm (+0.50mm Overbore)</option>
-                        <option value="86.00mm (Standard)">86.00mm (K-Series Standard OEM)</option>
+                        <option value="82.00mm (Standard)">82.00mm (B58 Standard OEM)</option>
+                        <option value="82.50mm (+0.50mm Overbore)">82.50mm (+0.50mm Overbore)</option>
+                        <option value="84.00mm (Standard)">84.00mm (S58 Standard OEM)</option>
                         <option value="Bespoke custom specification">Bespoke Custom Size</option>
                       </select>
                     </div>

@@ -6,19 +6,19 @@ import { useCart } from "../context/CartContext";
 
 export const BuildCalculator: React.FC = () => {
   const { addToCart } = useCart();
-  const [engine, setEngine] = useState<"L15B" | "K20C1" | "K24">("L15B");
-  const [targetHp, setTargetHp] = useState<number>(450);
+  const [engine, setEngine] = useState<"B58" | "S58" | "S55">("B58");
+  const [targetHp, setTargetHp] = useState<number>(650);
   const [addedAll, setAddedAll] = useState(false);
 
   // Engines list
   const engines = [
-    { code: "L15B", name: "1.5L Civic Turbo (FC, FK, FL)", defHp: 450, ranges: [300, 450, 650] },
-    { code: "K20C1", name: "2.0L Civic Type R Turbo (FK8, FL5)", defHp: 700, ranges: [450, 700, 950] },
-    { code: "K24", name: "2.4L Accord / Custom Swap (NA/Turbo)", defHp: 600, ranges: [300, 600, 900] },
+    { code: "B58", name: "3.0L TwinScroll Turbo (340i, M240i, A90 Supra)", defHp: 650, ranges: [450, 750, 1000] },
+    { code: "S58", name: "3.0L TwinTurbo (G80 M3, G82 M4, G87 M2)", defHp: 800, ranges: [600, 900, 1200] },
+    { code: "S55", name: "3.0L Classic TwinTurbo (F80 M3, F82 M4, F87 M2C)", defHp: 650, ranges: [500, 750, 1000] },
   ] as const;
 
   // Parts list helper based on engine & horsepower range
-  const getBuildSpecs = (eng: "L15B" | "K20C1" | "K24", hp: number) => {
+  const getBuildSpecs = (eng: "B58" | "S58" | "S55", hp: number) => {
     let pistonType = "OgarageG Spec Forged Pistons (2618 Alloy)";
     let rodType = "CP-Carrillo H-Beam Connecting Rods";
     let studType = "ARP 2000 Head Stud Kit";
@@ -27,35 +27,25 @@ export const BuildCalculator: React.FC = () => {
     const gasketType = "Athena Cooper Ring Gasket";
     let machinedNeed = "Basic Block Honing & Decking";
     
-    let partsCost = 2800;
-    let shopLaborCost = 1800;
+    let partsCost = 2900;
+    let shopLaborCost = 1900;
 
-    if (hp >= 700) {
+    if (hp >= 900) {
       pistonType = "OgarageG Spec CP-Carrillo Pistons (Heavy duty racing dome)";
       rodType = "CP-Carrillo Pro-H-Beam Rods with Custom Age 625+ Bolts";
       studType = "ARP Custom Age 625+ Head Stud Kit (280,000 psi)";
       sleeveType = "Darton MID Ductile Iron Sleeves";
       machinedNeed = "CNC Cylinder Sleeving + Deck Surface Fire Ringing";
-      partsCost = 4800;
-      shopLaborCost = 3500;
-    } else if (hp >= 450) {
+      partsCost = 4900;
+      shopLaborCost = 3600;
+    } else if (hp >= 700) {
       pistonType = "OgarageG Spec CP-Carrillo Pistons";
       rodType = "CP-Carrillo H-Beam Rods with ARP2000 Bolts";
       studType = "ARP Custom Age 625+ Head Stud Kit";
-      sleeveType = "OEM Cylinder Walls (Up to 500HP safe)";
+      sleeveType = "OEM Cylinder Walls (Up to 750HP safe)";
       machinedNeed = "Precision Block Boring & Decking";
-      partsCost = 3500;
-      shopLaborCost = 2200;
-    }
-
-    if (eng === "K24" && hp === 300) {
-      pistonType = "CP High-Compression NA Pistons (12.5:1 CR)";
-      rodType = "CP-Carrillo H-Beam Lightweight Rods";
-      studType = "ARP2000 Head Studs";
-      sleeveType = "OEM Sleeves (Iron inserts standard)";
-      machinedNeed = "High-RPM Rotating Assembly Dynamic Balancing";
-      partsCost = 2200;
-      shopLaborCost = 1500;
+      partsCost = 3600;
+      shopLaborCost = 2300;
     }
 
     return {
@@ -122,7 +112,7 @@ export const BuildCalculator: React.FC = () => {
             Interactive Tool
           </span>
           <h3 className="text-2xl font-black text-black uppercase tracking-tight mt-2.5">
-            Honda Horsepower Build Builder
+            BMW Horsepower Build Builder
           </h3>
           <p className="text-xs font-bold text-gray-500 mt-1">
             Choose your engine platform, select your horsepower goals, and see your customized component recipe!
@@ -180,7 +170,7 @@ export const BuildCalculator: React.FC = () => {
                     : "border-gray-200 text-black hover:border-[#9e0005] bg-gray-50"
                 }`}
               >
-                {hp >= 750 ? "⚡ Extreme" : hp >= 450 ? "💪 Pro-Street" : "🚗 Street+"}
+                {hp >= 950 ? "⚡ Extreme" : hp >= 700 ? "💪 Pro-Street" : "🚗 Street+"}
                 <span className="block text-sm font-black mt-0.5">{hp} HP</span>
               </button>
             ))}
