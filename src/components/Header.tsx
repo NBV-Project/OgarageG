@@ -60,8 +60,8 @@ export const Header: React.FC = () => {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           scrolled
-            ? "bg-white border-b-2 border-[#9e0005] shadow-lg py-2"
-            : "bg-white border-b border-gray-100 py-4"
+            ? "bg-white border-b-2 border-[#9e0005] shadow-lg py-1.5 md:py-1"
+            : "bg-white border-b border-gray-100 py-3 md:py-2"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
               <img
                 src="/logo/logo_transparent.png"
                 alt="OgarageG Logo"
-                className="h-14 md:h-18 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-black text-black tracking-tight leading-none group-hover:text-[#9e0005] transition-colors">
