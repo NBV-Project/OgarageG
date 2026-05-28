@@ -53,7 +53,7 @@ export const Header: React.FC = () => {
       <div className="bg-[#9e0005] text-white text-xs font-bold py-2 px-4 text-center tracking-wider uppercase border-b border-black/10 select-none">
         <span className="animate-pulse">🔥 FREE SHIPPING ON THAILAND ORDERS OVER 9,999 THB!</span>
         <span className="hidden md:inline mx-3">|</span>
-        <span className="hidden md:inline">IN-HOUSE HONDA VTEC & TURBO ENGINE MACHINING & ASSEMBLY SPECIALISTS 🛠️</span>
+        <span className="hidden md:inline">IN-HOUSE BMW 340i B58 ENGINE MACHINING & ASSEMBLY SPECIALISTS 🛠️</span>
       </div>
 
       {/* 2. Main Navigation Bar */}
@@ -79,16 +79,18 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group shrink-0">
-              <div className="relative w-10 h-10 bg-[#9e0005] rounded-full flex items-center justify-center text-white border-2 border-black font-black text-xl shadow-md transform group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-sm tracking-tighter">OG</span>
-              </div>
+            <Link href="/" className="flex items-center gap-3 group shrink-0">
+              <img
+                src="/logo/logo_transparent.png"
+                alt="OgarageG Logo"
+                className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+              />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-black text-black tracking-tight leading-none group-hover:text-[#9e0005] transition-colors">
                   Ogarage<span className="text-[#9e0005]">G</span>
                 </span>
                 <span className="text-[9px] font-bold text-gray-500 uppercase tracking-widest leading-none mt-1">
-                  Honda Performance Engines
+                  BMW 340i B58 Specialists
                 </span>
               </div>
             </Link>

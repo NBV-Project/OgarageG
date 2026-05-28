@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState } from "react";
@@ -25,21 +26,23 @@ export const Footer: React.FC = () => {
           
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-[#9e0005] rounded-full flex items-center justify-center text-white border-2 border-white font-black text-sm">
-                OG
-              </div>
+            <Link href="/" className="flex items-center gap-3 group">
+              <img
+                src="/logo/logo_transparent.png"
+                alt="OgarageG Logo"
+                className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-black text-white tracking-tight leading-none">
                   Ogarage<span className="text-[#9e0005]">G</span>
                 </span>
                 <span className="text-[9px] font-bold text-gray-500 uppercase tracking-widest leading-none mt-1">
-                  Honda Engines Specialist
+                  BMW 340i B58 Specialists
                 </span>
               </div>
             </Link>
             <p className="text-sm text-gray-500 font-bold leading-relaxed">
-              We engineer, build, and supply the ultimate Honda performance parts for L15B Turbo, K20C1 Turbo, K-Series, and classic B-Series VTEC platforms. From CNC machined heads to Darton sleeved engine blocks, we deliver race-ready reliability.
+              We engineer, build, and supply the ultimate BMW 340i performance parts for B58 Gen 1, Gen 2, and Custom Stroker platforms. From CNC machined heads to Darton sleeved engine blocks, we deliver race-ready reliability.
             </p>
             <div className="flex items-center gap-3 text-xs font-black text-white uppercase bg-white/5 border border-white/10 px-4 py-2.5 rounded-lg select-none">
               <Shield className="text-[#9e0005]" size={16} />
