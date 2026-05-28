@@ -28,11 +28,11 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
               <div 
-                className="flex items-baseline font-logo italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                className="flex items-baseline font-logo italic tracking-[-0.05em] text-2xl md:text-3xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.15] duration-300"
                 style={{ fontWeight: 950 }}
               >
-                <span className="text-white">Ogarage</span>
-                <span className="text-[#e30613] -ml-[0.02em]">G</span>
+                <span className="text-white" style={{ WebkitTextStroke: "1.2px #ffffff" }}>Ogarage</span>
+                <span className="text-[#e30613] -ml-[0.02em]" style={{ WebkitTextStroke: "1.2px #e30613" }}>G</span>
               </div>
               <div className="flex flex-col border-l-2 border-white/20 pl-3 ml-3">
                 <span className="text-[9px] font-black text-white uppercase tracking-widest leading-none">

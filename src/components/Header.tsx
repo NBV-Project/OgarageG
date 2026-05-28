@@ -81,11 +81,11 @@ export const Header: React.FC = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
               <div 
-                className="flex items-baseline font-logo italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                className="flex items-baseline font-logo italic tracking-[-0.05em] text-2xl md:text-3xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.15] duration-300"
                 style={{ fontWeight: 950 }}
               >
-                <span className="text-black">Ogarage</span>
-                <span className="text-[#e30613] -ml-[0.02em]">G</span>
+                <span className="text-black" style={{ WebkitTextStroke: "1.2px #000000" }}>Ogarage</span>
+                <span className="text-[#e30613] -ml-[0.02em]" style={{ WebkitTextStroke: "1.2px #e30613" }}>G</span>
               </div>
               <div className="hidden sm:flex flex-col border-l-2 border-gray-200 pl-3 ml-3">
                 <span className="text-[9px] font-black text-gray-500 uppercase tracking-widest leading-none">
@@ -200,11 +200,11 @@ export const Header: React.FC = () => {
             <div className="p-4 border-b border-gray-100 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div 
-                  className="flex items-baseline font-logo italic tracking-[-0.05em] text-2xl transform -skew-x-12 scale-x-115 origin-left"
+                  className="flex items-baseline font-logo italic tracking-[-0.05em] text-xl transform -skew-x-12 scale-x-115 origin-left"
                   style={{ fontWeight: 950 }}
                 >
-                  <span className="text-black">Ogarage</span>
-                  <span className="text-[#e30613] -ml-[0.02em]">G</span>
+                  <span className="text-black" style={{ WebkitTextStroke: "1px #000000" }}>Ogarage</span>
+                  <span className="text-[#e30613] -ml-[0.02em]" style={{ WebkitTextStroke: "1px #e30613" }}>G</span>
                 </div>
               </div>
               <button
