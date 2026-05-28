@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
               <img
                 src="/logo/logo_transparent.png"
                 alt="OgarageG Logo"
-                className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-14 md:h-18 w-auto object-contain transition-transform group-hover:scale-105"
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-black text-black tracking-tight leading-none group-hover:text-[#9e0005] transition-colors">

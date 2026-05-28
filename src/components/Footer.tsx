@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
               <img
                 src="/logo/logo_transparent.png"
                 alt="OgarageG Logo"
-                className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-14 md:h-18 w-auto object-contain transition-transform group-hover:scale-105"
               />
               <div className="flex flex-col">
                 <span className="text-xl font-black text-white tracking-tight leading-none">
