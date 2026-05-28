@@ -4,12 +4,14 @@
   --background: #ffffff;
   --foreground: #000000;
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-logo: "Eurostile Bold Extended", "Eurostile Extended", "Eurostile-Bold", "Eurostile", "Microgramma Bold Extended", "Microgramma", var(--font-michroma), var(--font-oxanium), sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
+  --font-logo: var(--font-logo);
 }
 
 body {

@@ -81,7 +81,7 @@ export const Header: React.FC = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
               <div 
-                className="flex items-baseline font-sans italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                className="flex items-baseline font-logo italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
                 style={{ fontWeight: 950 }}
               >
                 <span className="text-black">Ogarage</span>
@@ -200,7 +200,7 @@ export const Header: React.FC = () => {
             <div className="p-4 border-b border-gray-100 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div 
-                  className="flex items-baseline font-sans italic tracking-[-0.05em] text-2xl transform -skew-x-12 scale-x-115 origin-left"
+                  className="flex items-baseline font-logo italic tracking-[-0.05em] text-2xl transform -skew-x-12 scale-x-115 origin-left"
                   style={{ fontWeight: 950 }}
                 >
                   <span className="text-black">Ogarage</span>

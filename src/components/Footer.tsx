@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
               <div 
-                className="flex items-baseline font-sans italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                className="flex items-baseline font-logo italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
                 style={{ fontWeight: 950 }}
               >
                 <span className="text-white">Ogarage</span>
