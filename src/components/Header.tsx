@@ -79,18 +79,20 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group shrink-0">
-              <img
-                src="/logo/logo_transparent.png"
-                alt="OgarageG Logo"
-                className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
-              />
-              <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-black text-black tracking-tight leading-none group-hover:text-[#9e0005] transition-colors">
-                  Ogarage<span className="text-[#9e0005]">G</span>
+            <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
+              <div 
+                className="flex items-baseline font-sans italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                style={{ fontWeight: 950 }}
+              >
+                <span className="text-black">Ogarage</span>
+                <span className="text-[#e30613] -ml-[0.02em]">G</span>
+              </div>
+              <div className="hidden sm:flex flex-col border-l-2 border-gray-200 pl-3 ml-3">
+                <span className="text-[9px] font-black text-gray-500 uppercase tracking-widest leading-none">
+                  BMW 340i
                 </span>
-                <span className="text-[9px] font-bold text-gray-500 uppercase tracking-widest leading-none mt-1">
-                  BMW 340i B58 Specialists
+                <span className="text-[8px] font-bold text-[#e30613] uppercase tracking-widest leading-none mt-0.5">
+                  B58 SPECIALISTS
                 </span>
               </div>
             </Link>
@@ -151,7 +153,7 @@ export const Header: React.FC = () => {
               <Search className="text-gray-400 shrink-0" size={20} />
               <input
                 type="text"
-                placeholder="Search Honda Civic parts (e.g., L15B Pistons, K20C1 head studs, cams)..."
+                placeholder="Search BMW 340i parts (e.g., B58 Pistons, CA625+ head studs, rods)..."
                 className="w-full bg-gray-50 border border-gray-200 rounded-full px-4 py-2.5 text-sm text-black focus:outline-none focus:border-[#9e0005] focus:bg-white font-bold transition-all"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -171,7 +173,7 @@ export const Header: React.FC = () => {
             </div>
             <div className="max-w-3xl mx-auto mt-3 flex flex-wrap items-center gap-2 text-xs text-gray-500 font-bold">
               <span>Quick Searches:</span>
-              {["L15B", "K20C1", "VTEC", "Pistons", "ARP Studs", "Stroker Kits"].map((term) => (
+              {["B58 Gen 1", "B58 Gen 2", "Pistons", "ARP Studs", "Connecting Rods", "Stroker Kits"].map((term) => (
                 <Link
                   key={term}
                   href={`/shop?search=${term}`}
@@ -196,11 +198,14 @@ export const Header: React.FC = () => {
           {/* Drawer Menu */}
           <div className="relative w-4/5 max-w-sm bg-white h-full flex flex-col shadow-2xl z-50 border-r-4 border-[#9e0005] animate-slideRight">
             <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-[#9e0005] rounded-full flex items-center justify-center text-white font-black text-sm">
-                  OG
+              <div className="flex items-center gap-3">
+                <div 
+                  className="flex items-baseline font-sans italic tracking-[-0.05em] text-2xl transform -skew-x-12 scale-x-115 origin-left"
+                  style={{ fontWeight: 950 }}
+                >
+                  <span className="text-black">Ogarage</span>
+                  <span className="text-[#e30613] -ml-[0.02em]">G</span>
                 </div>
-                <span className="font-black text-black">OgarageG</span>
               </div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}

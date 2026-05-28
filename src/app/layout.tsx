@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "OgarageG | Honda Civic & Type R Performance Engines",
-  description: "OgarageG is your #1 supplier of high-performance Honda engine components. Shop forged pistons, CP-Carrillo connecting rods, and custom ARP hardware for L15B, K20C1, K-Series, and more. Expert in-house engine assembly, CNC machining, cylinder block sleeving.",
+  title: "OgarageG | BMW 340i & B58 Performance Engines",
+  description: "OgarageG is your #1 supplier of high-performance BMW 340i B58 engine components. Shop forged pistons, CP-Carrillo connecting rods, and custom ARP hardware for B58 Gen 1, Gen 2, and Stroker engines. Expert in-house engine assembly, CNC machining, cylinder block sleeving.",
   icons: {
     icon: "/favicon.ico",
   }

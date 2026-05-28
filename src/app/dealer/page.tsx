@@ -259,13 +259,13 @@ export default function DealerProgram() {
                     </select>
                   </div>
                   <div className="space-y-1.5">
-                    <label className="text-gray-500 uppercase tracking-wide">Is your shop Honda-Specific?</label>
+                    <label className="text-gray-500 uppercase tracking-wide">Is your shop BMW-Specific?</label>
                     <select
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-xs text-black focus:outline-none focus:border-[#9e0005]"
                       value={formData.bmwSpecific}
                       onChange={(e) => setFormData({ ...formData, bmwSpecific: e.target.value })}
                     >
-                      <option value="Yes">Yes, we are a dedicated Honda tuner/builder</option>
+                      <option value="Yes">Yes, we are a dedicated BMW / Euro tuner/builder</option>
                       <option value="No">No, we tune all sports car platforms</option>
                     </select>
                   </div>

@@ -159,7 +159,7 @@ export default function Sponsorship() {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. 2018 Honda Civic FK7 (L15B Turbo engine)"
+                      placeholder="e.g. 2020 BMW 340i G20 (B58 Gen 2 engine)"
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-xs text-black focus:outline-none focus:border-[#9e0005]"
                       value={formData.carSpec}
                       onChange={(e) => setFormData({ ...formData, carSpec: e.target.value })}
@@ -255,7 +255,7 @@ export default function Sponsorship() {
                     <label className="text-gray-500 uppercase tracking-wide">Organization Affiliations</label>
                     <input
                       type="text"
-                      placeholder="e.g. Super Club, Honda Racing Championship"
+                      placeholder="e.g. Super Club Racing, Toyo Tires Racing, Drag Racing"
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-xs text-black focus:outline-none focus:border-[#9e0005]"
                       value={formData.organization}
                       onChange={(e) => setFormData({ ...formData, organization: e.target.value })}

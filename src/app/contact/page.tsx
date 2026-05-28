@@ -145,7 +145,7 @@ export default function Contact() {
                 <textarea
                   rows={4}
                   required
-                  placeholder="Tell us what is on your mind. If you are requesting a new product, please specify the Honda chassis and engine family."
+                  placeholder="Tell us what is on your mind. If you are requesting a new product, please specify the BMW chassis and B58 engine generation."
                   className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-xs text-black focus:outline-none focus:border-[#9e0005]"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}

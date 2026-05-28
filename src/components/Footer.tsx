@@ -26,18 +26,20 @@ export const Footer: React.FC = () => {
           
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-3 group">
-              <img
-                src="/logo/logo_transparent.png"
-                alt="OgarageG Logo"
-                className="h-14 md:h-18 w-auto object-contain transition-transform group-hover:scale-105"
-              />
-              <div className="flex flex-col">
-                <span className="text-xl font-black text-white tracking-tight leading-none">
-                  Ogarage<span className="text-[#9e0005]">G</span>
+            <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
+              <div 
+                className="flex items-baseline font-sans italic tracking-[-0.05em] text-3xl md:text-4xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.20] duration-300"
+                style={{ fontWeight: 950 }}
+              >
+                <span className="text-white">Ogarage</span>
+                <span className="text-[#e30613] -ml-[0.02em]">G</span>
+              </div>
+              <div className="flex flex-col border-l-2 border-white/20 pl-3 ml-3">
+                <span className="text-[9px] font-black text-white uppercase tracking-widest leading-none">
+                  BMW 340i
                 </span>
-                <span className="text-[9px] font-bold text-gray-500 uppercase tracking-widest leading-none mt-1">
-                  BMW 340i B58 Specialists
+                <span className="text-[8px] font-bold text-[#e30613] uppercase tracking-widest leading-none mt-0.5">
+                  B58 SPECIALISTS
                 </span>
               </div>
             </Link>
@@ -104,7 +106,7 @@ export const Footer: React.FC = () => {
               Stay Tuned
             </h3>
             <p className="text-xs font-bold text-gray-500 leading-normal">
-              Sign up for our newsletter and receive **5% OFF** your next order, exclusive Honda tuning guides, and new product releases!
+              Sign up for our newsletter and receive **5% OFF** your next order, exclusive BMW B58 tuning guides, and new product releases!
             </p>
             {subscribed ? (
               <div className="bg-red-950/40 border border-[#9e0005] p-4 rounded-xl flex items-start gap-2.5 text-red-200">
@@ -160,7 +162,7 @@ export const Footer: React.FC = () => {
           <div className="text-center md:text-left leading-relaxed">
             <p>© 2026 OgarageG Co., Ltd. All rights reserved. Built with Next.js & Tailwind CSS.</p>
             <p className="mt-1">
-              Honda, Civic, Type R, VTEC, L15B are registered trademarks of Honda Motor Co., Ltd. OgarageG is an independent tuning engine builder & component supplier and is not affiliated with Honda Motor Co., Ltd. All products sold are designated for off-road closed-course racing use only.
+              BMW, 340i, B58, F30, G20, G21 are registered trademarks of Bayerische Motoren Werke AG. OgarageG is an independent tuning engine builder & component supplier and is not affiliated with BMW AG. All products sold are designated for off-road closed-course racing use only.
             </p>
           </div>
 
