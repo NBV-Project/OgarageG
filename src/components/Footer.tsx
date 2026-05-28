@@ -26,9 +26,9 @@ export const Footer: React.FC = () => {
           
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 group shrink-0 select-none">
+            <Link href="/" className="flex items-center gap-2 group shrink-0 select-none -ml-2 md:-ml-3">
               <div 
-                className="flex items-baseline font-logo italic tracking-[-0.015em] text-2xl md:text-3xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.15] duration-300"
+                className="flex items-baseline font-logo italic tracking-[0.04em] text-2xl md:text-3xl transform -skew-x-12 scale-x-115 origin-left transition-transform group-hover:scale-[1.15] duration-300"
                 style={{ fontWeight: 950 }}
               >
                 <span className="text-white" style={{ WebkitTextStroke: "2px #ffffff" }}>Ogarage</span>
